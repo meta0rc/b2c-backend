@@ -1,6 +1,10 @@
 const router = require('express').Router()
 const Person = require('../models/Person')
 
+router.get('/', (req, res) => {
+    return res.status(200).json({msg: "Hello user"})
+})
+
 router.get('/user/:id', async (req,res)=> {
 
     const id = req.params.id

@@ -14,8 +14,7 @@ const port = process.env.PORT || 3000
 
 const mongo = 'mongodb+srv://gabriel:LzxLySm9nKHQQeSI@apicluster.os8bk.mongodb.net/usersDatabase?retryWrites=true&w=majority'
 
-mongoose
-.connect(mongo)
+mongoose.connect(mongo)
 .then(() =>{ 
     console.log('Conenctou ao Mongo')
     app.listen(port, ()=> { 
