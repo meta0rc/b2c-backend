@@ -12,7 +12,7 @@ app.use(routes)
 
 
 const url = 'mongodb+srv://gabriel:LzxLySm9nKHQQeSI@apicluster.os8bk.mongodb.net/usersDatabase?retryWrites=true&w=majority'
-
+const port = proces.env.PORT || 3030
 mongoose
 .connect(url)
 .then(() =>{ 
